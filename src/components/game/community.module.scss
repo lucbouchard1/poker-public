@@ -1,0 +1,36 @@
+.container {
+    position: absolute;
+    width: 600px;
+    left: -200px;
+    top: -50px;
+    text-align: center;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pot {
+    height: 45px;
+
+    p {
+        background: #673ab7;
+        border-radius: 5px;
+        margin: 5px;
+        margin-bottom: 20px;
+        padding: 2px 10px;
+        color: white;
+    }
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(1.1);
+}
+
+.card {
+    margin-left: 5px;
+    margin-right: 5px;
+}

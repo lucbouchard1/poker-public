@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "outDir": "./dist/",
+        "sourceMap": true,
+        "noImplicitAny": false,
+        "module": "commonjs",
+        "esModuleInterop": true,
+        "target": "es5",
+        "jsx": "react",
+        "skipLibCheck": true,
+        "downlevelIteration": true,
+        "lib": ["es5", "es6", "dom"]
+    },
+    "include": ["./src/**/*"],
+    "exclude": ["node_modules", "functions"]
+}

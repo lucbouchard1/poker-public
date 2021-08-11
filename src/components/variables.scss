@@ -1,0 +1,21 @@
+$break-tablet: 1224px;
+$break-mobile: 500px;
+
+$form-background-color: rgba(50, 50, 50, 1);
+
+$ui-element-background: #e0e0e0;
+$button-background: #171717;
+
+$neon-off: 0 0 0.1vw 0.2vw #757575;
+$neon-blue: 0 0 0.05vw 0.2vw #a4b1fa, 0 0 0.4vw 0.4vw #2d46ec;
+$neon-red: 0 0 0.05vw 0.2vw #eb7e7e;
+$neon-green: 0 0 0.05vw 0.2vw #96f79b;
+$neon-magenta: 0 0 0.05vw 0.2vw #f8c1ff;
+$neon-purple: 0 0 0.05vw 0.2vw #d9c1ff;
+$neon-teal: 0 0 0.05vw 0.2vw rgb(167, 245, 255);
+$neon-red-fill: 0 0 0.05vw 0.2vw #eb7e7e, inset 0 0 4vw 0.5vw #ec2d2d;
+$neon-green-fill: 0 0 0.05vw 0.2vw #c1ffc4, inset 0 0 4vw 0.5vw #1faa2b;
+$neon-magenta-fill: 0 0 0.05vw 0.2vw #f8c1ff, inset 0 0 4vw 0.5vw #8a1faa;
+$neon-purple-fill: 0 0 0.05vw 0.2vw #d9c1ff, inset 0 0 4vw 0.5vw #6b1faa;
+$neon-teal-fill: 0 0 0.05vw 0.2vw rgb(167, 245, 255),
+    inset 0 0 4vw 0.5vw #00bcd4;

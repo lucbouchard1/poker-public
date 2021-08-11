@@ -1,0 +1,14 @@
+@import "./variables.scss";
+
+.button {
+    @extend .controlsButton;
+}
+
+.buttonContent {
+    @extend .controlsButtonContent;
+}
+
+.icon {
+    height: 25px;
+    margin-right: 15px;
+}

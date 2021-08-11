@@ -1,0 +1,17 @@
+.button {
+    padding: 5px;
+    background: #191919;
+    height: 17px;
+    width: 68px;
+
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    p {
+        font-size: 0.7rem;
+        margin: 0;
+    }
+}

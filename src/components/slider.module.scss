@@ -1,0 +1,39 @@
+.container {
+    position: relative;
+    height: 23px;
+    user-select: none;
+}
+
+.rail {
+    position: absolute;
+    top: 10px;
+    height: 6px;
+    border-radius: 2px;
+    width: 100%;
+    background: white;
+}
+
+.thumbContainer {
+    position: relative;
+    width: 0px;
+    height: 0px;
+    overflow: visible;
+}
+
+.thumb {
+    cursor: grab;
+    position: relative;
+    top: 0px;
+    left: -5px;
+    height: 15px;
+    width: 15px;
+    z-index: 20;
+    background: white;
+    border: 6px solid white;
+    border-radius: 15px;
+    box-shadow: 0 0 0.5vw 0.01vw #212121;
+}
+
+.thumb:active {
+    cursor: grabbing;
+}

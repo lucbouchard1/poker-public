@@ -1,0 +1,28 @@
+{
+  "name": "@pokerweb-app/game",
+  "version": "0.1.0",
+  "scripts": {
+    "lint": "tslint --project tsconfig.json",
+    "build": "tsc",
+    "test": "mocha --require ts-node/register --extensions ts,tsx tests/**/*.test.ts"
+  },
+  "engines": {
+    "node": "8"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/chai": "^4.2.11",
+    "@types/chai-as-promised": "^7.1.2",
+    "@types/mocha": "^7.0.2",
+    "@types/sinon": "^9.0.0",
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "mocha": "^7.1.2",
+    "sinon": "^9.0.2",
+    "ts-mocha": "^7.0.0",
+    "ts-node": "^8.9.1",
+    "tslint": "^5.12.0",
+    "typescript": "^3.8.3"
+  },
+  "private": true
+}

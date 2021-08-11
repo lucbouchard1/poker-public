@@ -1,0 +1,38 @@
+.container {
+    position: relative;
+
+    input {
+        box-sizing: border-box;
+        border: 1px solid #9e9e9e;
+        text-align: center;
+        font-size: 1.3rem;
+        border-radius: 5px;
+        background: white;
+        border: none;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.nameContainer {
+    pointer-events: none;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.name {
+    white-space: nowrap;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #757575;
+    transform: translate(-50%, -50%);
+    transition: all 0.25s;
+}
+
+.nameOffset {
+    color: white;
+    transform: translate(-50%, -190%);
+}

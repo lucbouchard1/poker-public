@@ -1,0 +1,32 @@
+.container {
+    position: absolute;
+    height: 160px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.box {
+    width: 170px;
+    height: 60px;
+    position: relative;
+    z-index: 10;
+    border-radius: 5px;
+    border: 1px dashed #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: rgba(200, 200, 200, 0.3);
+    cursor: pointer;
+}
+
+.box:hover {
+    background: rgba(200, 200, 200, 0.5);
+}
+
+.text {
+    font-size: 1.3rem;
+    margin: 0;
+}

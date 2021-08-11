@@ -1,0 +1,26 @@
+@import "./variables.scss";
+
+.button {
+    @extend .controlsButton;
+    margin-left: 15px;
+    width: 60px;
+    height: 50px;
+    padding: 3px 0;
+
+    img {
+        height: 30px;
+        width: 30px;
+    }
+
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    p {
+        text-align: center;
+        margin: 0;
+        font-size: 0.8rem;
+    }
+}

@@ -1,0 +1,4 @@
+cron:
+    - description: "cleanup old game documents"
+      url: /api/cleanup
+      schedule: every 2 hours

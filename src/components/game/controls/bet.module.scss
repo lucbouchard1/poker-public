@@ -1,0 +1,122 @@
+@import "../../variables.scss";
+
+.container {
+    position: absolute;
+    top: 45px;
+    left: 855px;
+    background: transparent;
+    color: white;
+    margin-bottom: 20px;
+    transform-origin: 0px 150px;
+    transform: scaleY(0);
+    transition: transform 0.3s, opacity 0.3s;
+    opacity: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.expanded {
+    transform: scaleY(1);
+    opacity: 1;
+}
+
+.controls {
+    position: relative;
+    z-index: 30;
+    width: 415px;
+    padding: 0px 15px;
+    height: 80px;
+    background: #673ab7;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.controls::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 30px solid #673ab7;
+    left: 197px;
+    top: 75px;
+}
+
+.amountContainer {
+    padding: 0px 15px;
+    width: 400px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.sliderContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.slider {
+    padding: 5px 0px 5px 0px;
+    flex-grow: 1;
+}
+
+.topRow {
+    padding-top: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input {
+    width: 120px;
+    height: 30px;
+
+    input {
+        font-size: 1.1rem;
+    }
+
+    img {
+        height: 17px;
+        width: 17px;
+    }
+}
+
+.betPresets {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 2px;
+
+    p {
+        user-select: none;
+        font-size: 1.2rem;
+        padding: 0;
+        margin: 0;
+        margin-left: 30px;
+        cursor: pointer;
+    }
+
+    p:hover {
+        text-decoration: underline;
+    }
+
+    p.presetInactive {
+        opacity: 0.3;
+        cursor: auto;
+    }
+
+    p.presetInactive:hover {
+        text-decoration: none;
+    }
+}

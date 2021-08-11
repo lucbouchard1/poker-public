@@ -1,0 +1,44 @@
+.button {
+    position: relative;
+    width: 550px;
+    min-height: 50px;
+    padding: 3px 0;
+    height: 50px;
+}
+
+.inactiveButton {
+    div {
+        opacity: 0.9;
+    }
+}
+
+.buttonContent {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.9;
+
+    h1 {
+        font-size: 1.6rem;
+    }
+}
+
+.progress {
+    position: absolute;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.left {
+    transition: width 1s linear;
+    background: #8a1faa;
+    opacity: 0.7;
+}
+
+.right {
+    transition: width 1s linear;
+}

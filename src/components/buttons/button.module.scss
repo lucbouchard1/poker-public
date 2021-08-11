@@ -1,0 +1,76 @@
+@import "../variables.scss";
+
+.button {
+    background: $button-background;
+    color: white;
+    height: 40px;
+    cursor: pointer;
+    width: 100px;
+    padding: 3px 20px;
+    margin: 0px 0px;
+    transition: background 0.25s;
+    transition: box-shadow 0.25s;
+    border-radius: 5px;
+
+    div {
+        height: 100%;
+    }
+
+    p {
+        font-size: 1.3rem;
+        margin: 0;
+    }
+}
+
+.green {
+    box-shadow: $neon-green;
+}
+
+.green:hover {
+    box-shadow: $neon-green-fill;
+}
+
+.teal {
+    box-shadow: $neon-teal;
+}
+
+.teal:hover {
+    box-shadow: $neon-teal-fill;
+}
+
+.red {
+    box-shadow: $neon-red;
+}
+
+.red:hover {
+    box-shadow: $neon-red-fill;
+}
+
+.magenta {
+    box-shadow: $neon-magenta;
+}
+
+.magenta:hover {
+    box-shadow: $neon-magenta-fill;
+}
+
+.purple {
+    box-shadow: $neon-purple;
+}
+
+.purple:hover {
+    box-shadow: $neon-purple-fill;
+}
+
+.buttonInactive {
+    box-shadow: $neon-off;
+    div {
+        opacity: 0.4;
+    }
+    cursor: default;
+}
+
+.buttonInactive:hover {
+    background: $button-background;
+    box-shadow: $neon-off;
+}

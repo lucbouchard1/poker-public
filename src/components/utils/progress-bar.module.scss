@@ -1,0 +1,36 @@
+.container {
+    box-sizing: border-box;
+    position: absolute;
+    overflow: hidden;
+    z-index: 20;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.barContainer {
+    position: relative;
+    display: flex;
+    overflow: visible;
+    height: 100%;
+    width: 100%;
+}
+
+.bar {
+    position: relative;
+    z-index: 20;
+    height: 100%;
+    box-sizing: border-box;
+    border-bottom: 5px solid #66bb6a;
+}
+
+.remain {
+    position: relative;
+    z-index: 20;
+    height: 100%;
+    box-sizing: border-box;
+    border-bottom: 5px solid #bdbdbd;
+}

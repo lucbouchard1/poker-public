@@ -1,0 +1,52 @@
+@import "../variables.scss";
+
+.container {
+    background: radial-gradient(#616161, #000000);
+    min-height: 100%;
+}
+
+.main {
+    color: white;
+    text-align: center;
+
+    h1 {
+        font-size: 4rem;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+        @media screen and (max-width: $break-mobile) {
+            font-size: 3rem;
+        }
+    }
+
+    p {
+        font-size: 1.5rem;
+
+        @media screen and (max-width: $break-mobile) {
+            font-size: 1.2rem;
+        }
+    }
+}
+
+.form {
+    height: 550px;
+    background-image: url(../img/poker-table.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 1400px;
+}
+
+.content {
+    position: relative;
+    z-index: 10;
+}
+
+.error {
+    background: #d84315;
+    color: white;
+    padding: 3px 10px;
+}
+
+.footer {
+    height: 80px;
+}

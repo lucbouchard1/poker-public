@@ -1,0 +1,59 @@
+.mainContainer {
+    background: radial-gradient(#616161, #000000);
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.main {
+    height: 100%;
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+    transform-origin: left top;
+    width: 1660px;
+    min-width: 1660px;
+    max-width: 1660px;
+    height: 850px;
+    min-height: 850px;
+    max-height: 850px;
+}
+
+.game {
+    position: absolute;
+    top: 150px;
+    left: 330px;
+    margin: 0;
+    margin-right: 120px;
+    background: url("./img/poker-table.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 450px;
+    width: 1000px;
+    min-width: 1000px;
+    transform: scale(1.3);
+}
+
+.element {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    overflow: visible;
+}
+
+.center {
+    top: 125px;
+    left: 400px;
+}
+
+.footer {
+    position: absolute;
+    width: 100%;
+    top: 580px;
+    left: 0px;
+    z-index: -1;
+}

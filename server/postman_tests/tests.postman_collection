@@ -1,0 +1,209 @@
+{
+	"info": {
+		"_postman_id": "4d91747c-2683-48f9-9129-16e0778344a7",
+		"name": "pokertable",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CreateTable",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "a348b702-8ad8-4060-a812-58965abcfdc4",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;",
+							"tests[\"Got id\"] = responseBody !== null;",
+							"pm.globals.set(\"roomId\", responseBody);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}createRoomTest?hostName=Patrick&chips=999",
+					"host": [
+						"{{url}}createRoomTest"
+					],
+					"query": [
+						{
+							"key": "hostName",
+							"value": "Patrick"
+						},
+						{
+							"key": "chips",
+							"value": "999"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Join Room",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "66e19e5f-fbb8-455e-acb4-d9bd05aebec3",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;",
+							"tests[\"Joined correct room\"] = responseBody === pm.globals.get(\"roomId\");"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}joinRoomTest?name=test&roomId={{roomId}}&chips=2000",
+					"host": [
+						"{{url}}joinRoomTest"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "test"
+						},
+						{
+							"key": "roomId",
+							"value": "{{roomId}}"
+						},
+						{
+							"key": "chips",
+							"value": "2000"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sit down test at 3",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "66e19e5f-fbb8-455e-acb4-d9bd05aebec3",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}sitDownTest?name=test&roomId={{roomId}}&seat=3",
+					"host": [
+						"{{url}}sitDownTest"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "test"
+						},
+						{
+							"key": "roomId",
+							"value": "{{roomId}}"
+						},
+						{
+							"key": "seat",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sit down patrick at 8",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "66e19e5f-fbb8-455e-acb4-d9bd05aebec3",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}sitDownTest?name=Patrick&roomId={{roomId}}&seat=8",
+					"host": [
+						"{{url}}sitDownTest"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Patrick"
+						},
+						{
+							"key": "roomId",
+							"value": "{{roomId}}"
+						},
+						{
+							"key": "seat",
+							"value": "8"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sit down patrick at 8 Copy",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "66e19e5f-fbb8-455e-acb4-d9bd05aebec3",
+						"exec": [
+							"let gameData = JSON.parse(responseBody)",
+							"tests[\"Status code is 200\"] = responseCode.code === 200;",
+							"tests[\"Patrick exits\"] = gameData.players.Patrick !== null",
+							"tests[\"Patrick has correct chips\"] = gameData.players.Patrick.chips === 999",
+							"tests[\"test exists\"] = gameData.players.test !== null",
+							"tests[\"test has correct chips\"] = gameData.players.test.chips === 2000",
+							"tests[\"patrick is at seat 8\"] = gameData.seats[8].playerName === \"Patrick\"",
+							"tests[\"test is at seat 3\"] = gameData.seats[3].playerName === \"test\"",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}getGame?id={{roomId}}",
+					"host": [
+						"{{url}}getGame"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "{{roomId}}"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

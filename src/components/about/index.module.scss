@@ -1,0 +1,87 @@
+$text-color: #f0f0f0;
+
+.body {
+    background: #212121;
+    min-height: 100%;
+}
+
+.header {
+    width: 100%;
+    position: fixed;
+    box-shadow: 0 0 5px 1px #151515;
+    background: #2a2a2a;
+}
+
+.main {
+    color: $text-color;
+    padding-top: 80px;
+
+    h1 {
+        letter-spacing: 1.5px;
+        word-spacing: 2px;
+        font-size: 3rem;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+        margin-bottom: 40px;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
+
+    p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+        line-height: 1.8rem;
+    }
+}
+
+.faqSpacer {
+    height: 30px;
+}
+
+.intro {
+    text-align: center;
+}
+
+.email {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.siteName {
+    font-family: "Roboto Slab", serif;
+    font-weight: bold;
+}
+
+.section {
+    margin-bottom: 50px;
+    overflow: auto;
+
+    a {
+        text-decoration: underline;
+        color: $text-color;
+    }
+}
+
+.demo {
+    border-radius: 3px;
+    display: block;
+    max-width: 600px;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.content {
+    margin: auto;
+    max-width: 800px;
+}
+
+.footer {
+    height: 100px;
+}

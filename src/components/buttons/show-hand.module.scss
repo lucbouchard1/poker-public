@@ -1,0 +1,16 @@
+@import "./variables.scss";
+
+.button {
+    @extend .controlsButton;
+    height: 35px;
+
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    p {
+        margin: 0;
+    }
+}
